@@ -64,4 +64,4 @@
 
 **GitHub Repository**: [ai-stock-master-openclaw](https://github.com/hengruiyun/ai-stock-master-openclaw)  
 **Support Email**: [ttfox@ttfox.com](mailto:ttfox@ttfox.com)  
-**License**: AGPL-3.0
+
