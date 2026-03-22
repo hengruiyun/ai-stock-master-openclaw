@@ -2,11 +2,6 @@
 
 > A professional AI analysis system powered by 3 legendary investment master models, deeply integrated with [OpenClaw](https://github.com/hengruiyun/ai-stock-master-openclaw) AI Agent.
 
-[![Version](https://img.shields.io/badge/Version-1.0.0-green.svg)]()
-[![License](https://img.shields.io/badge/License-AGPL--3.0-orange.svg)](https://www.gnu.org/licenses/agpl-3.0.html)
-[![Language](https://img.shields.io/badge/Language-English-orange.svg)]()
-[![Data](https://img.shields.io/badge/Data-Non--real--time-blue.svg)]()
-
 ---
 
 ## Overview

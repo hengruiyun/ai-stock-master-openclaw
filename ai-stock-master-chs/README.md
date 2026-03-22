@@ -2,9 +2,6 @@
 
 > 基于 3 位顶级投资专家模型的智能分析系统，专为 [OpenClaw（小龙虾）](https://github.com/hengruiyun/ai-stock-master-openclaw) AI Agent 深度集成而设计。
 
-[![开源协议](https://img.shields.io/badge/License-AGPL--3.0-orange.svg)](https://www.gnu.org/licenses/agpl-3.0.html)
-[![版本](https://img.shields.io/badge/版本-1.0.0-green.svg)]()
-[![数据](https://img.shields.io/badge/数据-非实时/全天候-blue.svg)]()
 
 ---
 

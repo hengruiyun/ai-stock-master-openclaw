@@ -28,7 +28,6 @@
 6. **Start Chatting**: Try asking: *"How is the market today?"* or *"Analyze AAPL"*.
 
 ### Legal Disclaimer & Data Latency
-- **AGPL-3.0 Licensed**: Open-source with reciprocity requirements.
 - **Non-Real-Time Notice**: All data are **DELAYED / POST-MARKET** AI analysis packages. Not suitable for live intraday trading.
 - **No Liability**: The authors take NO responsibility for any financial loss incurred by using this tool.
 
@@ -58,7 +57,6 @@
 6. **开启对话**: 尝试对小龙虾说：*"分析大盘"* 或 *"分析股票 000548"*。
 
 ### 免责声明与数据时效
-- **AGPL-3.0 协议**: 这是一个开源项目，修改后的代码必须同样开源。
 - **非实时警告**: 本项目所使用的数据均为 **非实时 / 盘后 / 延时智能分析包**。由于计算需要时间，数据存在显著市场滞后性。
 - **免责声明**: 本工具仅供学术研究使用。作者拒绝承担任何因数据滞后、解析错误或用户决策失误导致的经济损失。**股市有风险，入市需谨慎。**
 
