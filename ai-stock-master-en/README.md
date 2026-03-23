@@ -18,7 +18,7 @@ All conclusions are derived exclusively from the backend intelligence engine. No
 
 | Module | Description | Function |
 |:---|:---|:---|
-| **Market Sentiment Radar** | Real-time Greed/Fear/Neutral detection via bull-bear ratio analysis | `get_market_sentiment()` |
+| **Market Sentiment Radar** | Greed/Fear/Neutral detection via bull-bear ratio analysis | `get_market_sentiment()` |
 | **Sector Momentum Ranking** | Track top-performing industries by TMA quantitative score | `get_industry_momentum()` |
 | **Sector Leader Tracker** | Identify the strongest blue-chip leaders in any given industry | `get_industry_top_stocks()` |
 | **Master Stock Screener** | Full-market scan for stocks with elite rating (level 7+) | `get_quant_picks()` |
