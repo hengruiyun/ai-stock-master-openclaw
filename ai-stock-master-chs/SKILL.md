@@ -1,30 +1,50 @@
 ---
 name: AI股票大师 For 小龙虾
-description: 基于 3 位顶级投资大师模型的智能分析系统，专为 OpenClaw（小龙虾）AI Agent 深度集成 | https://github.com/hengruiyun/ai-stock-master-openclaw
-version: 1.0.0
+description: 基于 5 位顶级投资大师模型的智能分析系统，专为 OpenClaw（小龙虾）AI Agent 深度集成 | https://github.com/hengruiyun/ai-stock-master-openclaw
+version: 1.0.1
 trigger: 
+  - "Market Analysis"
+  - "Market Sentiment"
+  - "How is the market"
+  - "Bull Bear ratio"
+  - "Greed Fear"
+  - "Sector Ranking"
+  - "Top Sectors"
+  - "Sector Leaders"
+  - "Leading Stocks"
+  - "Best Industries"
+  - "Hot Sectors"
+  - "Hot Money"
+  - "Capital Flow"
+  - "Diagnose Stock"
+  - "Analyze Stock"
+  - "Should I buy"
+  - "Stock Analysis"
+  - "Quant Picks"
+  - "Best Stocks"
+  - "Strong Stocks"
+  - "Stock Screener"
   - "分析大盘"
   - "大盘怎么样"
   - "大盘情况"
   - "市场行情"
-  - "大盘"
-  - "多空"
+  - "多空分析"
   - "分析行业"
   - "行业排行"
   - "行业排名"
-  - "个股"
-  - "A股"
+  - "分析个股"
+  - "分析A股"
   - "热门板块"
   - "股票大师"
   - "精选股票"
   - "强势股"
-  - "涨停"
+  - "涨停板"
   - "龙虎榜"
-  - "游资"
-  - "连板"
+  - "大A"
+  - "连板数"
   - "分析股票"
-  - "港股"
-  - "美股"
+  - "分析港股"
+  - "分析美股"
 ---
 
 # AI股票大师 For 小龙虾 (简体中文版)
@@ -65,5 +85,5 @@ trigger:
 
 ## 纪律约束
 - **不准凭空捏造**: 所有数字必须来自后台，不得用大模型内部知识推断涨跌。
-- **拟人化播报**: 把"后台 JSON 数据"说成"分析数据"，把"API 返回"说成"AI股票大师扫描结果"。
-- **股票代码识别**: 用户提到任何 6 位 A 股代码、股票名称，均应自动触发 `get_stock_analysis()`。
+- **透明化播报**: 把后台数据整理后播报，同时必须向用户明确说明“该分析数据是通过请求外部接口（TTfox.com）获取的”，以保障用户的隐私知情权。
+- **股票代码识别**: 仅当用户明确要求分析某只股票时，才可触发 `get_stock_analysis()`。如果用户只是随口提到 6 位数字或股票名称，严禁自动触发以此发起网络请求。

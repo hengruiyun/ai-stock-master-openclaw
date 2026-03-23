@@ -1,6 +1,6 @@
 # AI Stock Master for OpenClaw
 
-> A professional AI analysis system powered by 3 legendary investment master models, deeply integrated with [OpenClaw](https://github.com/hengruiyun/ai-stock-master-openclaw) AI Agent.
+> A professional AI analysis system powered by 5 legendary investment master models, deeply integrated with [OpenClaw](https://github.com/hengruiyun/ai-stock-master-openclaw) AI Agent.
 
 ---
 
@@ -23,11 +23,11 @@ All conclusions are derived exclusively from the backend intelligence engine. No
 | **Sector Leader Tracker** | Identify the strongest blue-chip leaders in any given industry | `get_industry_top_stocks()` |
 | **Master Stock Screener** | Full-market scan for stocks with elite rating (level 7+) | `get_quant_picks()` |
 | **Capital Flow Monitor** | Real-time detection of hot money inflows via live sector scoring | `get_hot_money_alerts()` |
-| **3-Master Stock Diagnosis** | Deep analysis from 3 investment legend models with risk assessment | `get_stock_analysis()` |
+| **5-Master Stock Diagnosis** | Deep analysis from 5 investment legend models with risk assessment | `get_stock_analysis()` |
 
 ---
 
-## The 3 Investment Master Strategy Matrix
+## The 5 Investment Master Strategy Matrix
 
 This system incorporates the core philosophies of the world's greatest investors:
 
@@ -88,7 +88,7 @@ ai-stock-master-en/
 
 This system retrieves analysis results via the **TTFox Intelligence Server** (`https://master.ttfox.com`).
 
-**⚠ MANDATORY NOTICE:**
+** MANDATORY NOTICE:**
 - **Non-real-time**: All data used by this system are **Non-real-time / Post-market / Static Analysis Packages**. Due to the high computational load required for A-share analysis, there is inherently a significant delay compared to live exchanges.
 - **Academic Use Only**: This tool is designed for **Mid-to-Long term trend research** and **Strategic verification**. It is NOT suitable for high-frequency or real-time intraday trading.
 

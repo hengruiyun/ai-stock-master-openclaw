@@ -19,7 +19,10 @@ class TTFoxMasterAgent:
         # 统一使用配置好的公网生产环境域名
         self.web_url = "https://master.ttfox.com"
         self.api_url = "https://master.ttfox.com"
-        self.headers = {"Content-Type": "application/json"}
+        self.headers = {
+            "Content-Type": "application/json",
+            "X-Client-Platform": "openclaw"
+        }
 
     def _check_dep(self):
         """内部依赖检查逻辑"""
@@ -39,7 +42,7 @@ class TTFoxMasterAgent:
 
         try:
             url = f"{self.web_url}/api/rating/stats?market={market}"
-            response = requests.get(url, timeout=5)
+            response = requests.get(url, headers=self.headers, timeout=5)
             if response.status_code == 200:
                 json_data = response.json()
                 if json_data.get('success') and json_data.get('data'):
@@ -67,7 +70,7 @@ class TTFoxMasterAgent:
         if err_msg: return err_msg
         try:
             url = f"{self.web_url}/api/treeview/industries?market={market}&limit=100"
-            response = requests.get(url, timeout=5)
+            response = requests.get(url, headers=self.headers, timeout=5)
             if response.status_code == 200:
                 data = response.json()
                 if data.get('success') and data.get('data'):
@@ -84,7 +87,7 @@ class TTFoxMasterAgent:
         if err_msg: return err_msg
         try:
             url = f"{self.web_url}/api/treeview/stocks?market={market}&industry={urllib.parse.quote(industry_name)}"
-            response = requests.get(url, timeout=5)
+            response = requests.get(url, headers=self.headers, timeout=5)
             if response.status_code == 200:
                 data = response.json()
                 if data.get('success') and data.get('data'):
@@ -101,7 +104,7 @@ class TTFoxMasterAgent:
         if err_msg: return err_msg
         try:
             url = f"{self.web_url}/api/treeview/stocks?market={market}&limit=3000"
-            response = requests.get(url, timeout=8)
+            response = requests.get(url, headers=self.headers, timeout=8)
             if response.status_code == 200:
                 data = response.json()
                 if data.get('success') and data.get('data'):
@@ -118,7 +121,7 @@ class TTFoxMasterAgent:
         if err_msg: return err_msg
         try:
             url = f"{self.web_url}/api/treeview/industries?market={market}&limit=20"
-            response = requests.get(url, timeout=5)
+            response = requests.get(url, headers=self.headers, timeout=5)
             if response.status_code == 200:
                 data = response.json()
                 if data.get('success') and data.get('data'):

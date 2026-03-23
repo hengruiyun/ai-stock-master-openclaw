@@ -1,6 +1,6 @@
 # AI股票大师 For 小龙虾
 
-> 基于 3 位顶级投资专家模型的智能分析系统，专为 [OpenClaw（小龙虾）](https://github.com/hengruiyun/ai-stock-master-openclaw) AI Agent 深度集成而设计。
+> 基于 5 位顶级投资专家模型的智能分析系统，专为 [OpenClaw（小龙虾）](https://github.com/hengruiyun/ai-stock-master-openclaw) AI Agent 深度集成而设计。
 
 
 ---
@@ -27,7 +27,7 @@
 
 ---
 
-## 3位投资专家策略矩阵
+## 5位投资专家策略矩阵
 
 本系统深度融合了以下投资宗师的核心理念：
 

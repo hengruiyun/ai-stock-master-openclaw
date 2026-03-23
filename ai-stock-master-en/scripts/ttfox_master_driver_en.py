@@ -18,7 +18,10 @@ class TTFoxMasterAgentEn:
         self.base_url = "https://master.ttfox.com"
         # Language preference for backend (if supported)
         self.params = {"lang": "en"}
-        self.headers = {"Content-Type": "application/json"}
+        self.headers = {
+            "Content-Type": "application/json",
+            "X-Client-Platform": "openclaw"
+        }
 
     def _check_dep(self):
         """Internal dependency check"""
@@ -37,7 +40,7 @@ class TTFoxMasterAgentEn:
         if err_msg: return err_msg
         try:
             url = f"{self.base_url}/api/rating/stats"
-            res = requests.get(url, params={**self.params, "market": market}, timeout=5)
+            res = requests.get(url, params={**self.params, "market": market}, headers=self.headers, timeout=5)
             if res.status_code == 200:
                 data = res.json()
                 if data.get('success') and data.get('data'):
@@ -64,7 +67,7 @@ class TTFoxMasterAgentEn:
         if err_msg: return err_msg
         try:
             url = f"{self.base_url}/api/treeview/industries"
-            res = requests.get(url, params={**self.params, "market": market, "limit": 20}, timeout=5)
+            res = requests.get(url, params={**self.params, "market": market, "limit": 20}, headers=self.headers, timeout=5)
             if res.status_code == 200:
                 data = res.json()
                 if data.get('success') and data.get('data'):
@@ -83,7 +86,7 @@ class TTFoxMasterAgentEn:
         try:
             encoded_sector = urllib.parse.quote(sector_name)
             url = f"{self.base_url}/api/treeview/stocks?market={market}&industry={encoded_sector}"
-            res = requests.get(url, timeout=5)
+            res = requests.get(url, headers=self.headers, timeout=5)
             if res.status_code == 200:
                 data = res.json()
                 if data.get('success') and data.get('data'):
@@ -130,7 +133,7 @@ class TTFoxMasterAgentEn:
         try:
             # Reusing industry momentum to detect where money is flowing
             url = f"{self.base_url}/api/treeview/industries"
-            res = requests.get(url, params={**self.params, "market": market, "limit": 10}, timeout=5)
+            res = requests.get(url, params={**self.params, "market": market, "limit": 10}, headers=self.headers, timeout=5)
             if res.status_code == 200:
                 data = res.json()
                 if data.get('success') and data.get('data'):
@@ -153,7 +156,7 @@ class TTFoxMasterAgentEn:
         try:
             url = f"{self.base_url}/api/treeview/stocks"
             params = {**self.params, "market": market, "limit": 2000}
-            res = requests.get(url, params=params, timeout=10)
+            res = requests.get(url, params=params, headers=self.headers, timeout=10)
             if res.status_code == 200:
                 data = res.json()
                 if data.get('success'):
